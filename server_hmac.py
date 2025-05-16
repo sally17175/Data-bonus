@@ -21,7 +21,7 @@ def main():
         print("MAC verified successfully. Message is authentic. \n")
     # Forged message and MAC from client.py
     forged_message = b"amount=100&to=alice\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00&admin=true"
-    forged_mac = "c45e48256adc8c6d991b951876ec6819"
+    forged_mac = "97312a73075b6e1589117ce55e0a3ca6"
     print("--- Verifying forged message ---")
     if verify(forged_message, forged_mac):
         print("MAC verified successfully (unexpected).")
